@@ -5,7 +5,7 @@ export const Hero = () => {
       <div class="container hero-content">
         <div class="hero-text fade-in">
           <h1 class="hero-title">
-            Atchen.dev: Tu tienda online profesional <br>
+            Tu tienda online profesional <br>
             <span class="highlight">sin que dejes de ser artista.</span>
           </h1>
           <p class="hero-slogan">

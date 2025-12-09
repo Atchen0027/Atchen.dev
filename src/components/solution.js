@@ -8,13 +8,13 @@ export const Solution = () => {
               <div class="solution-content">
                 <p class="lead">
                   Eres un artesano, un diseñador, un creador. Tu tiempo vale oro y debe invertirse en tu arte. 
-                  Con Atchen.dev, te introducimos en el mercado <em>online</em> con una tienda propia, asequible y segura.
+                  Te introducimos en el mercado <em>online</em> con una tienda propia, asequible y segura.
                 </p>
                 <ul class="feature-list">
                   <li class="feature-item">
                     <span class="feature-icon">💸</span>
                     <div class="feature-text">
-                      <strong>Dejes de pagar comisiones</strong> y tus márgenes de beneficio sean íntegros.
+                      <strong>Deja de pagar comisiones</strong> y tus márgenes de beneficio sean íntegros.
                     </div>
                   </li>
                   <li class="feature-item">
