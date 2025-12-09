@@ -3,7 +3,7 @@ export const Header = () => {
     <header class="header">
       <div class="container header-content">
         <a href="#" class="logo">
-          <img src="/logo.png" alt="Atchen.dev Logo" style="height: 60px;">
+          <img src="logo.png" alt="Atchen.dev Logo" style="height: 60px;">
         </a>
         <nav class="nav-menu">
           <a href="#" class="nav-link">INICIO</a>

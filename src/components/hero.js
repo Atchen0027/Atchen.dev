@@ -17,7 +17,7 @@ export const Hero = () => {
         </div>
         <!-- Placeholder for hero image/visual -->
         <div class="hero-visual fade-in">
-           <img src="/hero-bg.jpg" alt="Artesana trabajando" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--glass-shadow); border: 1px solid var(--glass-border);">
+           <img src="hero-bg.jpg" alt="Artesana trabajando" style="width: 100%; height: auto; border-radius: 20px; box-shadow: var(--glass-shadow); border: 1px solid var(--glass-border);">
         </div>
       </div>
     </section>
