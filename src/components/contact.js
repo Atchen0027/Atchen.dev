@@ -5,6 +5,7 @@ export const Contact = () => {
         <h2 class="section-title">¿Tienes dudas? Empecemos a hablar de tu proyecto.</h2>
         <div class="contact-wrapper fade-in">
           <form class="contact-form" action="https://formsubmit.co/acen0027@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://atchen0027.github.io/Atchen.dev/?success=true">
             <input type="hidden" name="_subject" value="Nuevo contacto desde Atchen Landing">
             <input type="hidden" name="_captcha" value="false">
             
