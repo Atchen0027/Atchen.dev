@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tutoriales exclusivos para gestionar tu tienda online Atchen.dev"
+    />
+    <title>Tutoriales | Atchen.dev</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <style>
+      .tutorials-page {
+        padding-top: 120px;
+        background: var(--bg-primary);
+        min-height: 100vh;
+      }
+      .tutorials-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+      .tutorials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        padding-bottom: 4rem;
+      }
+      .tutorial-card {
+        background: var(--bg-highlight);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: block;
+      }
+      .tutorial-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--accent-primary);
+        box-shadow: var(--glass-shadow);
+      }
+      .card-thumbnail {
+        width: 100%;
+        height: 200px;
+        background: var(--bg-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+      }
+      .card-content {
+        padding: 1.5rem;
+      }
+      .card-content h3 {
+        color: var(--text-primary);
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+      }
+      .card-content p {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header will be injected here just to keep consistent nav -->
+      <header class="header">
+        <div class="container header-content">
+          <a href="/" class="logo">
+            <img src="/logo.png" alt="Atchen.dev Logo" style="height: 50px" />
+          </a>
+          <nav class="nav-menu">
+            <a href="/" class="nav-link">VOLVER AL INICIO</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="tutorials-page">
+        <div class="container">
+          <div class="tutorials-header">
+            <h1 class="section-title">Tutoriales en Video</h1>
+            <p class="section-subtitle">
+              Aprende a gestionar tu tienda en minutos con nuestras guías paso a
+              paso.
+            </p>
+          </div>
+
+          <div class="tutorials-grid">
+            <!-- Tutorial 1 -->
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+              class="tutorial-card"
+            >
+              <div class="card-thumbnail">📦</div>
+              <div class="card-content">
+                <h3>Cómo subir un producto</h3>
+                <p>
+                  Aprende a añadir fotos, precios y descripciones a tus nuevos
+                  productos.
+                </p>
+              </div>
+            </a>
+
+            <!-- Tutorial 2 -->
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+              class="tutorial-card"
+            >
+              <div class="card-thumbnail">🏷️</div>
+              <div class="card-content">
+                <h3>Crear cupones de descuento</h3>
+                <p>
+                  Fideliza a tus clientes creando ofertas especiales y códigos
+                  promocionales.
+                </p>
+              </div>
+            </a>
+
+            <!-- Tutorial 3 -->
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="_blank"
+              class="tutorial-card"
+            >
+              <div class="card-thumbnail">🚚</div>
+              <div class="card-content">
+                <h3>Gestionar pedidos y envíos</h3>
+                <p>
+                  Todo lo que necesitas saber desde que entra una venta hasta
+                  que la envías.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer reused content manually for now as it is a separate page -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-bottom">
+            <p>&copy; 2025 Atchen.dev. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
