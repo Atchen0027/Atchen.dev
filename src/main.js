@@ -15,12 +15,11 @@ document.querySelector("#app").innerHTML = `
   ${Header()}
   <main>
     ${Hero()}
-    ${Solution()}
     ${About()}
+    ${Solution()}
     ${Pricing()}
     ${Security()}
     ${Gallery()}
-    <!-- ${Testimonials()} (Hidden until first feedback) -->
     ${FAQ()}
     ${Contact()}
   </main>

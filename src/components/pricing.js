@@ -38,9 +38,9 @@ export const Pricing = () => {
                 <li>✅ <strong>Copias de seguridad semanales</strong> de toda tu web</li>
                 <li>✅ Ayuda para añadir hasta <strong>15 productos nuevos al mes</strong></li>
                 <li>✅ <strong>Pequeñas modificaciones</strong> (textos, colores...)</li>
-                <li class="warning">🔴 Requisito: Tener un Plan A o similar</li>
+                <li class="warning">🔴 Requisito: Tener la web Basica</li>
               </ul>
-              <a href="#contacto" class="btn btn-outline">CONTRATAR MANTENIMIENTO</a>
+              <a href="#contacto" class="btn btn-outline">AÑADIR MANTENIMIENTO</a>
             </div>
           </div>
 
@@ -58,7 +58,7 @@ export const Pricing = () => {
                 <li>✅ <strong>Hosting y Dominio incluidos</strong></li>
                 <li>✅ <strong>Soporte Prioritario</strong></li>
                 <li>✅ Todos los beneficios del Plan B</li>
-                <li class="info">⚠️ <strong>Propiedad:</strong> Tuya tras 6 meses. Cancelación anticipada: 220€ proporcional.</li>
+                <li class="info">⚠️ <strong>Propiedad:</strong> La web sera propiedad mia durante los 6 primeros meses, una vez cumplidos sera tuya sin coste extra</li>
               </ul>
               <a href="#contacto" class="btn btn-primary">QUIERO EL TODO INCLUIDO</a>
             </div>
