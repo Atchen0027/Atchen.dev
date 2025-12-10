@@ -4,6 +4,7 @@ import { Hero } from "./components/hero.js";
 import { Solution } from "./components/solution.js";
 import { Pricing } from "./components/pricing.js";
 import { Security } from "./components/security.js";
+import { Gallery } from "./components/gallery.js";
 import { FAQ } from "./components/faq.js";
 import { Contact } from "./components/contact.js";
 import { Footer } from "./components/footer.js";
@@ -15,6 +16,7 @@ document.querySelector("#app").innerHTML = `
     ${Solution()}
     ${Pricing()}
     ${Security()}
+    ${Gallery()}
     ${FAQ()}
     ${Contact()}
   </main>
@@ -92,3 +94,69 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+
+// Lightbox Logic
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxCaption = document.getElementById("lightbox-caption");
+const galleryItems = document.querySelectorAll(".gallery-item");
+const closeBtn = document.getElementById("lightbox-close");
+const prevBtn = document.getElementById("lightbox-prev");
+const nextBtn = document.getElementById("lightbox-next");
+
+let currentIndex = 0;
+
+function showImage(index) {
+  if (index >= galleryItems.length) currentIndex = 0;
+  else if (index < 0) currentIndex = galleryItems.length - 1;
+  else currentIndex = index;
+
+  const item = galleryItems[currentIndex];
+  const img = item.querySelector("img");
+  const caption = item.querySelector(".gallery-caption").textContent;
+
+  lightboxImg.src = img.src;
+  lightboxImg.alt = img.alt;
+  lightboxCaption.textContent = caption;
+}
+
+if (lightbox) {
+  // Open Lightbox
+  galleryItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      lightbox.classList.add("active");
+      showImage(index);
+    });
+  });
+
+  // Close Lightbox
+  closeBtn.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("active");
+    }
+  });
+
+  // Navigation
+  prevBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    showImage(currentIndex - 1);
+  });
+
+  nextBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    showImage(currentIndex + 1);
+  });
+
+  // Keyboard Navigation
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("active")) return;
+
+    if (e.key === "Escape") lightbox.classList.remove("active");
+    if (e.key === "ArrowLeft") showImage(currentIndex - 1);
+    if (e.key === "ArrowRight") showImage(currentIndex + 1);
+  });
+}
