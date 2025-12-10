@@ -2,9 +2,11 @@ import "./style.css";
 import { Header } from "./components/header.js";
 import { Hero } from "./components/hero.js";
 import { Solution } from "./components/solution.js";
+import { About } from "./components/about.js";
 import { Pricing } from "./components/pricing.js";
 import { Security } from "./components/security.js";
 import { Gallery } from "./components/gallery.js";
+import { Testimonials } from "./components/testimonials.js";
 import { FAQ } from "./components/faq.js";
 import { Contact } from "./components/contact.js";
 import { Footer } from "./components/footer.js";
@@ -14,9 +16,11 @@ document.querySelector("#app").innerHTML = `
   <main>
     ${Hero()}
     ${Solution()}
+    ${About()}
     ${Pricing()}
     ${Security()}
     ${Gallery()}
+    <!-- ${Testimonials()} (Hidden until first feedback) -->
     ${FAQ()}
     ${Contact()}
   </main>
