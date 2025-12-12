@@ -16,7 +16,7 @@ export const Security = () => {
              <h4>Nuestro Acceso (Administrador)</h4>
              <p>Nos permite realizar copias de seguridad, mantener los plugins actualizados y asegurar la velocidad.</p>
           </div>
-          <a href="/tutorials.html" class="security-item highlight fade-in" style="animation-delay: 0.2s; text-decoration: none; display: block;">
+          <a href="./tutorials.html" class="security-item highlight fade-in" style="animation-delay: 0.2s; text-decoration: none; display: block;">
              <div class="icon-box">🎁</div>
              <h4>Tutoriales en video</h4>
              <p>Te entregamos videos muy cortos y claros sobre los procesos clave para que manejes la tienda sin necesidad de consultarnos.</p>
