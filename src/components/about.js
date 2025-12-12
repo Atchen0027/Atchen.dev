@@ -23,6 +23,11 @@ export const About = () => {
             </p>
           </div>
         </div>
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="https://atchen0027.github.io/Porfolio/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Ver mi Portafolio
+          </a>
+        </div>
       </div>
     </section>
   `;
